@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GPasswords</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2 class="titulo">GPasswords</h2>
+        <div class="resultado">
+            <span id="resultado"></span>
+            <button class="btn" id="copiar">
+                <i class="far fa-clipboard"></i>
+            </button>
+        </div>
+        <div class="opciones">
+            <div class="opcion">
+                <label>Longitud</label>
+                <input type="number" min="4" max="20" id="longitud" value="20">                
+            </div>
+            <div class="opcion">
+                <label>Incluir mayúsculas</label>
+                <input type="checkbox" id="mayus">
+            </div>
+            <div class="opcion">
+                <label>Incluir minúsculas</label>
+                <input type="checkbox" id="minus">
+            </div>
+            <div class="opcion">
+                <label>Incluir números</label>
+                <input type="checkbox" id="nums">
+            </div>
+            <div class="opcion">
+                <label>Incluir simbolos</label>
+                <input type="checkbox" id="simbs">
+            </div>
+        </div>
+        <button class="btnGenerar" id="generar">
+            Generar contraseña
+        </button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
